@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+    </head>
+    <body>
+        <div class="title__swiper">
+            <h1>Swiper</h1>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/1.jpg" alt="forest"></div>
+                <div class="swiper-slide"><img src="img/2.jpg" alt="forest"></div>
+                <div class="swiper-slide"><img src="img/3.jpg" alt="forest"></div>
+                <div class="swiper-slide"><img src="img/4.jpeg" alt="forest"></div>
+                <div class="swiper-slide"><img src="img/6.jpg" alt="forest"></div>
+                <div class="swiper-slide"><img src="img/1.jpg" alt="forest"></div>
+                <div class="swiper-slide"><img src="img/2.jpg" alt="forest"></div>
+                <div class="swiper-slide"><img src="img/3.jpg" alt="forest"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="link-slick">
+            <a href="slick.html" target="_blank">Слайдер Slick</a>
+        </div>
+        <div class="link-owl">
+            <a href="owl.html" target="_blank">Слайдер owlCarousel</a>
+        </div>
+        <div class="link-lupa">
+            <a href="lupa.html" target="_blank">Lupa</a>
+        </div>
+        <div class="link-box">
+            <a href="box.html" target="_blank">Галерея LightBox</a>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: true,
+            interval: 5000,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                },
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+                autoplay: false,
+                },
+                976: {
+                slidesPerView: 3,
+                spaceBetween: 60,
+                }
+            }
+          });
+        </script>
+    </body>
+</html>
