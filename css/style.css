@@ -80,7 +80,7 @@ body {
     padding-left: 15px;
 }
 .link-lupa a {
-    color:rgb(27, 49, 121);
+    color:rgb(70, 102, 207);
     text-decoration: underline;
     font-size: 20px;
     transition: all ease-in-out 0.3s;
@@ -95,7 +95,7 @@ body {
     padding-left: 15px;
 }
 .link-swiper a {
-    color:rgb(8, 27, 85);
+    color:rgb(38, 169, 75);
     text-decoration: underline;
     font-size: 20px;
     transition: all ease-in-out 0.3s;
